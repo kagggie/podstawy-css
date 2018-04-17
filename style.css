@@ -1,0 +1,94 @@
+/*selektor uniwersalny, wszystkie elementy na stronie */
+/*
+* {
+    color: cadetblue;
+}
+*/
+
+/*selektor laczony */
+
+/*
+.text.text-red {
+    color: chartreuse;
+}
+*/
+
+body {
+    margin: 0;
+}
+
+.green-background {
+    background-color: green;
+    height: 400px;
+    position: relative;
+}
+
+/*selektor grupowania*/
+.red, .blue {
+    color: white;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: darkorchid;
+    z-index: 9999;
+}
+
+#jednostki-miary > div {
+    background-color: rgba(255, 0, 0, 0.6);
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#piksele {
+    width: 400px;
+}
+
+#em {
+    width: 50em;
+}
+
+#procenty {
+    width: 50%;
+}
+
+#header {
+    height: 100vh;
+    background-color: yellow;
+}
+
+#pseudoelementy p {
+    color: #F00;
+}
+
+#pseudoelementy p::before {
+    content: "*";
+    
+}
+
+/*pseudoklasy*/
+/*musimy zlapac a musimy go ztargetowac */
+nav ul li:first-child a {
+    color: green;    
+}
+nav ul li:last-child a {
+    color: #777;   
+}
+
+nav ul li:nth-child(3n + 2) a {
+    color: red;
+}
